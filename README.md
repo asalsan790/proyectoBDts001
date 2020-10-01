@@ -5,13 +5,16 @@ con:
 Con lo que tenemos el package.json
 
 # Instalamos typescript como depencencia para desarrollo 
+con:
+*npm install typescript -D*
 con lo que no necesitaríamos tenerlo a nivel global con -g
+y typescript se instala en node_modules/typescript
 
 # Creamos el tsconfig.json
 con: *npx tsc --init*
 
-Si tenemos instalado tupescript 
-a nivel global tanbién valdría:
+Si tenemos instalado typescript 
+a nivel global también valdría:
 *tsc --init*
 
 Además del outDir hemos añadido a continuación de  "compilerOptions":
@@ -40,5 +43,5 @@ Hemos excluido, para que no se suban al repositorio, las carpetas:
 Si tenemos varios usuarios que hacen uso se GitHub y no 
 queremos que se guarden las credenciales en Windows 
 hay que ejecutar:
-*git config --system --unset credential.helper*
+*git config --system --unset credential.helper*-u 
 
