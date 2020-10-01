@@ -45,3 +45,7 @@ queremos que se guarden las credenciales en Windows
 hay que ejecutar:
 *git config --system --unset credential.helper*-u 
 
+# Recordatorio comandos para subir al repositorio
+*git add .*
+*git commit -m "mensaje"*
+*git push -u origin master*
